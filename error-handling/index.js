@@ -1,7 +1,7 @@
 module.exports = (app) => {
 
   app.use((err, req, res) => {
-    res.status(404).json({ message: "this routes does not exist" })
+    err.status(404).json({ message: "this routes does not exist" })
   })
 
 
